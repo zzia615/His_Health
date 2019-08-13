@@ -47,6 +47,7 @@
     <Compile Include="Extension\CommandExtenstion.cs" />
     <Compile Include="Extension\DatabaseExtension.cs" />
     <Compile Include="File\FileManager.cs" />
+    <Compile Include="Interface\IStartup.cs" />
     <Compile Include="Log\LoggerManager.cs" />
     <Compile Include="Network\HttpRequest.cs" />
     <Compile Include="Process\ProcessManager.cs" />
