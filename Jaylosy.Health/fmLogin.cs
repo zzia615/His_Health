@@ -18,9 +18,12 @@ namespace Jaylosy.Health
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DatabaseManager db = new DatabaseManager("defaultDb");
-            dataSet1 = db.QueryDataset("select * from sysobjects");
-            dataGridView1.DataSource = dataSet1.Tables[0];
+            ucPatInfo patInfo = new ucPatInfo();
+            patInfo.Dock = DockStyle.Fill;
+            patInfo.AutoScaleMode = AutoScaleMode.Dpi;
+            patInfo.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(patInfo);
         }
     }
 }
