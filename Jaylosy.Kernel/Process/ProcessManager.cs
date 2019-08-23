@@ -12,7 +12,7 @@ namespace Jaylosy.Kernel.Process
         [DllImport("user32.dll")]
         public static extern void SwitchToThisWindow(IntPtr hWnd, bool fAltTab);
 
-        public bool StartProcess(string processName)
+        public bool StartProcess()
         {
             //获取所有进程
             var temp = System.Diagnostics.Process.GetProcesses();
@@ -21,7 +21,7 @@ namespace Jaylosy.Kernel.Process
             //根据当前进程的名称查找是否已经有相同的进程运行
             foreach(var process in temp)
             {
-                if (process.ProcessName == processName && process.Id != currentProcess.Id)
+                if (process.ProcessName == currentProcess.ProcessName && process.Id != currentProcess.Id)
                 {
                     //如果找到同名的进程，则最大化窗口并激活显示
                     IntPtr handle = process.MainWindowHandle;
