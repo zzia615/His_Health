@@ -25,5 +25,18 @@ namespace Jaylosy.Health
             panel1.Controls.Clear();
             panel1.Controls.Add(patInfo);
         }
+
+        private void fmLogin_Load(object sender, EventArgs e)
+        {
+            int i = 0;
+            try
+            {
+                new Kernel.File.FileManager().CreateDir(@"d:\excp\123\sd");
+            }
+            catch(Exception ex1)
+            {
+                throw new Kernel.BaseException(ex1.Message);
+            }
+        }
     }
 }

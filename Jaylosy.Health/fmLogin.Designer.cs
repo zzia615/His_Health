@@ -61,6 +61,7 @@
             this.Controls.Add(this.button1);
             this.Name = "fmLogin";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.fmLogin_Load);
             this.ResumeLayout(false);
 
         }

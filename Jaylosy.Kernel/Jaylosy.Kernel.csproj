@@ -44,6 +44,7 @@
     <Compile Include="Database\BaseDatabase.cs" />
     <Compile Include="Database\DatabaseManager.cs" />
     <Compile Include="Database\IDatabase.cs" />
+    <Compile Include="Exception\BaseException.cs" />
     <Compile Include="Extension\CommandExtenstion.cs" />
     <Compile Include="Extension\DatabaseExtension.cs" />
     <Compile Include="File\FileManager.cs" />
